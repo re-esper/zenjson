@@ -65,6 +65,9 @@ double pi = json["pi"];
 std::string hello = json["variable"];
 bool enabled = json["enabled"];
 int64_t twentytwo = json["data"][0];
+// or uses getInt/Double/String/... interface, they support passing default values
+// if node "backend" does not exist, got "opengl"
+std::string backend = json["config"]["backend"].getString("opengl");
 ```
 ### Serialization / Deserialization
 ```cpp
