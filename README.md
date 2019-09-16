@@ -49,15 +49,8 @@ json["data"][0] = 22;
 json["data"][1] = "33";
 // add an object inside the object
 json["answer"]["everything"] = 42;
-// add a complex json
-json["pi"] = {
-        { "list", { 1, 0, 2 } },
-        { "object", {
-                {"currency", "USD"},
-                {"value", 42.99}
-            }
-	}
-};
+// modify or add a complex json
+json["pi"] = { { "list", { 1, 0, 2 } } };
 ```
 ### Obtain
 ```cpp
